@@ -303,18 +303,19 @@
           });
         
         var swiper = new Swiper('.flat_slide', {
+              grabCursor: true,
+              loop: true,
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
               },
-               keyboard: {
+              keyboard: {
                 enabled: true,
                 onlyInViewport: false,
               },
-            autoplay: {
+              autoplay: {
                 delay: 1800,
-              },
-            loop: true
+              }
         });
         var swiper = new Swiper('.detail_slide', {
                keyboard: {
