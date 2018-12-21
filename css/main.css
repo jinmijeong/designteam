@@ -346,7 +346,7 @@
             position: relative;
         }
         .detail_phone{
-            width:380px;
+            width: 360px;
             height:700px;
             margin-left: 5px;
             position: absolute;
@@ -355,6 +355,7 @@
             transform:translateX(-50%);
             background-image:url('../img/detail_mobile_bgfile.png');
             background-repeat:no-repeat;
+            background-size: 360px;
         }
         .detail_slide{
             width:290px;
@@ -393,7 +394,7 @@
             width:100%;
         }
         .detail_phone .detail_phone_inner {
-            width:290px;
+            width:272px;
             margin-top:43px;
             margin-left:30px;
         }
@@ -405,6 +406,9 @@
             height: 298px;
             background-color:#fff;
         }        
+        .detail_phone img {
+           width:100%;
+        }     
         .detail_phone_btn {
             cursor:pointer;
         }

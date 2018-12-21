@@ -502,7 +502,23 @@
               autoTxt();           
             },200);
         });
-      
+
+        $(document).keydown(function(e) {
+          switch(e.which) {
+            case 38:
+              setInterval(function(){ 
+                autoTxt();           
+              },200);
+            break;
+            case 40:
+              setInterval(function(){ 
+                autoTxt();           
+              },200);
+            break;
+            default: return;
+          }
+        });
+
         $('.onepage-pagination li a').click(function() {
             setInterval(function(){ 
               autoTxt();           
