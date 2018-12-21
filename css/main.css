@@ -153,6 +153,7 @@
             margin: 50px auto;
             height:100%; */
             position: relative;
+            margin-top: 50px;
         }
         .revenue_contents img{
             width:100%;
@@ -160,6 +161,13 @@
         }
 
         /* page6 */
+        .keywords_contents{
+            position: relative;
+
+        }
+        .keywords_contents .section_tit{
+            margin-top: 270px;
+        }
         .keywords_box {
             width: 1400px;
             height: 100vh;
@@ -220,11 +228,11 @@
         }
         @keyframes slideTxt_top {
             0% {top:0px; opacity:0;}
-            100% {top:35%; opacity:1;}
+            100% {top:20%; opacity:1;}
         }
         @keyframes slideTxt_bottom {
             0% {top:0px; opacity:0;}
-            100% {top:55%; opacity:1;}
+            100% {top:40%; opacity:1;}
         }
         
         /* page7 */
