@@ -61,7 +61,7 @@
             position: relative;
             width:1200px;
             margin: 0 auto;
-            top:34%;
+            top:50%;
             z-index: 3;
            animation:slideTop 1.5s both;
         }
@@ -456,7 +456,7 @@
             left:0;
             right:0;
             transform-origin:50% 100%;
-            transform:perspective(300px) rotateX(18deg);
+            transform:perspective(300px) rotateX(15deg);
             margin-top:300px;
             color:#fff;
             z-index:0;
@@ -540,7 +540,7 @@
         width: 100%;
         margin: 0 auto;
     }
-.slide_top01{
+/*.slide_top01{
     animation:slideTop 1.4s both;
 }
 .slide_top02{
@@ -549,4 +549,4 @@
 @keyframes slideTop{
     0% {transform:translateY(50px); opacity:0;}
     100% {transform:translateY(0); opacity:1;}
-}
+}*/

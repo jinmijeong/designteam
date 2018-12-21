@@ -13,14 +13,6 @@
 </head>
 <body>
     <div id="wrap" class="main">
-      <nav id="nav">
-        <ul class="gnb">
-            <li><a href="#page1" data-n="0">page1</a></li>
-            <li><a href="#page2" data-n="1000">page2</a></li>
-            <li><a href="#page3" data-n="2000">page3</a></li>
-            <li><a href="#page4" data-n="3000">page4</a></li>
-        </ul>
-      </nav>
        <!-- main visual -->
         <section id="mainContents" class="page1">
             <div class="sub_wrap">
@@ -524,28 +516,6 @@
         })
         
         /* page16 */
-        $(window).scroll(function(){
-            var windowH = $(window).height();
-            scrollY=$(window).scrollTop();
-
-            $('.finish_txt .finish_txt01').each(function(){
-                var imgPosition = $(this).offset().top;
-                if(scrollY > imgPosition - windowH){
-                    $(this).addClass("slide_top01");
-                }else{
-                    $(this).removeClass("slide_top01")
-                }
-            })
-            
-            $('.finish_txt .finish_txt02').each(function(){
-                var imgPosition = $(this).offset().top;
-                if(scrollY > imgPosition - windowH){
-                    $(this).addClass("slide_top02");
-                }else{
-                    $(this).removeClass("slide_top02")
-                }
-            })
-        })
         $('.finish_txt h3').hide();
         $('.finish_txt').click(function(){
             $('.finish_txt p').hide();
