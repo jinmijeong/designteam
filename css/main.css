@@ -148,16 +148,16 @@
         }
 
         /* page5 */
+        .page5 {
+            display:table;
+        }
         .revenue_contents{
-            /*width:1600px;
-            margin: 50px auto;
-            height:100%; */
             position: relative;
-            margin-top: 50px;
+            display:table-cell;
+            vertical-align:middle;
         }
         .revenue_contents img{
-            width:100%;
-            
+            width:100%;            
         }
 
         /* page6 */
