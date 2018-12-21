@@ -362,28 +362,26 @@
     </div>
 </body>
 <script src="js/jquery-1.12.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-    </script>
-    
-     <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-     <script src="js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+<script src="js/swiper.min.js"></script>
 <script>
     $(document).ready(function(){
          setInterval(function(){ 
              $('.phone_img').animate({marginTop:-15},1000,'linear',function(){
                  $(this).animate({marginTop:0},1000)
              })
-        },2000)
+            },2000)
         $('.phone_img').animate({marginTop:-15},1000,'linear',function(){
-                 $(this).animate({marginTop:0},1000)
-             })
+                     $(this).animate({marginTop:0},1000)
+                 })
         setInterval(function(){ 
              $('.bg_fr_ball').animate({marginBottom:10},800,'swing',function(){
-                 $(this).animate({marginBottom:0},800)
-             })
-        },1600)
-        $('.bg_fr_ball').animate({marginBottom:10},800,'swing',function(){
-                 $(this).animate({marginBottom:0},800)
+                     $(this).animate({marginBottom:0},800)
+                 })
+            },1600)
+            $('.bg_fr_ball').animate({marginBottom:10},800,'swing',function(){
+                     $(this).animate({marginBottom:0},800)
              });
         
         $(".main").onepage_scroll({
