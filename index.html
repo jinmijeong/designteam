@@ -110,8 +110,8 @@
                           </div>
                         </div>
                         <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <!--div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div-->
                   </div>
             </div>
        </section>
@@ -148,8 +148,8 @@
                             <div class="swiper-slide"><img src="img/uv_22.jpg" alt=""></div>
                         </div>
                         <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <!--div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div-->
                   </div>
             </div>
        </section>
@@ -201,8 +201,8 @@
                           <div class="swiper-slide"><img src="img/flat_15.jpg" alt=""></div>
                         </div>
                         <!-- Add Arrows -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <!--div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div-->
                   </div>
            </div>
        </section>
@@ -393,10 +393,6 @@
         var swiper = new Swiper('.flat_slide', {
               grabCursor: true,
               loop: true,
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
               keyboard: {
                 enabled: true,
                 onlyInViewport: false,
@@ -429,10 +425,10 @@
                 modifier: 1, // Effect multipler
                 slideShadows : true, // Enables slides shadows
               },
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              }
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
         });
         /* page6 */
         $(document).on('click', '.page6', function() {
