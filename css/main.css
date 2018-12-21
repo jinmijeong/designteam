@@ -472,9 +472,10 @@
             color:#fff;
             z-index:0;
             display:none;
+            margin-top:1000px;
         }
         .auto_txt{
-            animation:autoscroll 20s linear;
+            animation:autoscroll 30s linear;
         }
         html:after{
             content:'';
@@ -491,7 +492,7 @@
         }
         @keyframes autoscroll{
             to {
-                margin-top:-3000px;
+                margin-top:-6500px;
             }  
         }
 
