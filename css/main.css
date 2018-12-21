@@ -435,7 +435,7 @@
 
         .designer_contents{
             position:absolute;
-            top:-3500px;
+            top:0;
             bottom:0;
             left:0;
             right:0;
@@ -447,12 +447,24 @@
             font-weight:500;
             letter-spacing: -2px;
         }
+        .designerPage {
+            position:relative;
+        }
         .designer_txt{
-            padding-top:3500px;
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            transform-origin:50% 100%;
+            transform:perspective(300px) rotateX(18deg);
+            margin-top:300px;
             color:#fff;
+            z-index:0;
+
         }
         .auto_txt{
-            animation:autoscroll 900s linear;
+            animation:autoscroll 20s linear;
         }
         html:after{
             content:'';
@@ -463,22 +475,12 @@
             right:0;
             pointer-events:none;
         }
-        #deignerPage03{
-
-            position:absolute;
-            top:0;
-            bottom:0;
-            left:0;
-            right:0;
-            transform-origin:50% 100%;
-            transform:perspective(300px) rotateX(18deg);
-        }
         html{
             color:#fff;
             background:#ff6d5f;
         }
         @keyframes autoscroll{
             to{
-                margin-top:-50000px;
+                margin-top:-3000px;
             }    
         }

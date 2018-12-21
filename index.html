@@ -281,7 +281,7 @@
                <img src="img/designer_txt_02.png" alt="">
            </div>
        </section>
-       <section id="deignerPage03" class="page14">
+       <section id="designerPage03" class="designerPage page14">
            <div class="designer_contents">
               <div class="designer_txt">
                    마음먹으면 다양한 일을 할 수 있다. <br>
@@ -304,7 +304,7 @@
                <img src="img/designer_txt_03.png" alt="">
            </div>
        </section>
-       <section id="deignerPage03" class="page14">
+       <section id="designerPage05" class="designerPage page14">
            <div class="designer_contents">
               <div class="designer_txt">
                     디자인에 대한 자율성이 적은 편. <br>    
@@ -457,25 +457,34 @@
         $('.detail_phone_btn').click(function() {
             $('.detail_img').addClass('animate');
         });
-        
-        /* page 12 13 14
-        $(window).scroll(function(){
-            var windowH = $(window).height();
-            scrollY=$(window).scrollTop();
+ 
+        /* page13 15*/
+        function autoTxt() {
+            $('.designerPage').each(function(index) {
+              var pageID = $(this).attr('id');
+              if($('#'+pageID).hasClass('active')) {
+                $('#'+pageID).find('.designer_txt').addClass('auto_txt');
+              }
+              else {
+                $('#'+pageID).find('.designer_txt').removeClass('auto_txt');            
+              }
+              return index;
+            });          
+        } 
+        autoTxt();
 
-            $('.designer_txt').each(function(){
-                var imgPosition = $(this).offset().top;
-                if(scrollY > imgPosition - windowH){
-                    $(this).addClass("auto_txt");
-                }else{
-                    $(this).removeClass("auto_txt")
-                }
-            })
-        })   */    
-		
-        
+        $('section').bind('DOMMouseScroll mousewheel MozMousePixelScroll', function(){
+            setInterval(function(){ 
+              autoTxt();           
+            },2000);
+        });
+      
+        $('.onepage-pagination li a').click(function() {
+            setInterval(function(){ 
+              autoTxt();           
+            },2000);
+        });		
  });        
-		
 		
 </script>
 </html>
