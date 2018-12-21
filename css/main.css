@@ -460,6 +460,7 @@
             margin-top:300px;
             color:#fff;
             z-index:0;
+            display:none;
         }
         .auto_txt{
             animation:autoscroll 20s linear;
