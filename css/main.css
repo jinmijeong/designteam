@@ -166,7 +166,7 @@
 
         }
         .keywords_contents .section_tit{
-            margin-top: 270px;
+            margin-top: 210px;
         }
         .keywords_box {
             width: 1400px;
@@ -228,11 +228,11 @@
         }
         @keyframes slideTxt_top {
             0% {top:0px; opacity:0;}
-            100% {top:20%; opacity:1;}
+            100% {top:18%; opacity:1;}
         }
         @keyframes slideTxt_bottom {
             0% {top:0px; opacity:0;}
-            100% {top:40%; opacity:1;}
+            100% {top:38%; opacity:1;}
         }
         
         /* page7 */
