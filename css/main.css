@@ -460,7 +460,7 @@
             margin-top:300px;
             color:#fff;
             z-index:0;
-
+            display:none;
         }
         .auto_txt{
             animation:autoscroll 20s linear;
@@ -479,9 +479,9 @@
             background:#ff6d5f;
         }
         @keyframes autoscroll{
-            to{
+            to {
                 margin-top:-3000px;
-            }    
+            }  
         }
 
         /* page15 */

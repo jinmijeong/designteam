@@ -407,11 +407,14 @@
               }
         });
         var swiper = new Swiper('.detail_slide', {
-               keyboard: {
+            loop: true,
+            autoplay: {
+                delay: 1800,
+            },
+            keyboard: {
                 enabled: true,
                 onlyInViewport: false,
-              },
-            loop: false
+            },
         });
         var swiper = new Swiper('.concept_slide', {
               effect: 'coverflow',
@@ -486,9 +489,11 @@
             $('.designerPage').each(function(index) {
               var pageID = $(this).attr('id');
               if($('#'+pageID).hasClass('active')) {
+                $('#'+pageID).find('.designer_txt').show();
                 $('#'+pageID).find('.designer_txt').addClass('auto_txt');
               }
               else {
+                $('#'+pageID).find('.designer_txt').hide();
                 $('#'+pageID).find('.designer_txt').removeClass('auto_txt');            
               }
               return index;
@@ -499,13 +504,13 @@
         $('section').bind('DOMMouseScroll mousewheel MozMousePixelScroll', function(){
             setInterval(function(){ 
               autoTxt();           
-            },2000);
+            },200);
         });
       
         $('.onepage-pagination li a').click(function() {
             setInterval(function(){ 
               autoTxt();           
-            },2000);
+            },200);
         });		
    
 		
