@@ -6,9 +6,10 @@
     src: url('../font/Futura Bold Italic.eot');
     src: local(''), url('../font/Futura Bold Italic.woff');
 }
-
-
-
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('../font/NotoSansKR-Bold.otf');
+}
  /* reset */
         body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
         body,h1,h2,h3,h4,h5,h6 {font-family:"hcRegular",'Noto Sans KR',"돋움",dotum,sans-serif; font-size:12px; color:#333;}
