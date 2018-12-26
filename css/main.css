@@ -475,7 +475,7 @@
             margin-top:1000px;
         }
         .auto_txt{
-            animation:autoscroll 30s linear;
+            animation:autoscroll 45s linear;
         }
         html:after{
             content:'';
